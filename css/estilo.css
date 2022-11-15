@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* configuração de altura do html e body */
+
+html,
+body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    /* Aqui estamos colocando uma imagem acima da outra, e aplicando também um linear gradient. */
+    background: url(../imagens/capa.png), url(../ruido.png), linear-gradient(50deg, #ff4169, #7c26f8);
+    /* fixa a imagem de fundo */
+    background-attachment: fixed;
+}
+
+
+/* ----------------------------------------  Menu ----------------------------------------  */
+
+
+/* transparencia da navbar */
+
+nav.navbar-transparente {
+    padding: 15px 0px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+
+/* alteração das cores dos itens do nav */
+
+.navbar-light,
+.navbar-nav,
+.nav-link {
+    color: #fff;
+}
+
+.navbar-light,
+.navbar-nav .nav-link:hover {
+    color: #9bf0e1;
+}
+
+
+/* configuaração da borda do menu hamburguer */
+
+.navbar-light,
+.navbar-toggler {
+    color: rgba(255, 255, 255, .5);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+
+/* divisor dos itens da lista */
+
+.divisor {
+    width: 1px;
+    background: #fff;
+    margin: 12px 15px;
+}
+
+
+/* ----------------------------------------  Fim Menu ----------------------------------------  */
+
+
+/* ---------------------------------------- Home ---------------------------------------- */
+
+#home {
+    height: 100%;
+}
+
+.capa {
+    text-align: center;
+}
+
+h1 {
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+
+/* botões */
+
+.btn-custom {
+    color: #fff;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    text-transform: uppercase;
+    transition: background 0.4s, color 0.4s;
+    padding: 10px 20px;
+}
+
+
+/* cores de fundo dos botões */
+
+.btn-roxo {
+    background-color: #7c26f8;
+    color: #fff;
+}
+
+.btn-roxo:hover {
+    background-color: #6207e3;
+    color: #fff;
+}
+
+.btn-branco {
+    border: solid 2px #fff;
+}
+
+.btn-branco:hover {
+    background-color: #fff;
+    color: black;
+}
+
+
+/* ---------------------------------------- Fim Home ---------------------------------------- */
+
+
+/* ---------------------------------------- Serviços ---------------------------------------- */
+
+.caixa {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#servicos {
+    background-color: #fff;
+}
+
+#servicos h2,
+h3 {
+    color: #7c26f8;
+}
+
+.albuns {
+    padding: 10px 0;
+}
+
+h2 {
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+
+/* ---------------------------------------- Fim Serviços ---------------------------------------- */
+
+
+/* ---------------------------------------- Recursos ---------------------------------------- */
+
+#recursos h3 {
+    color: #9bf0e1;
+}
+
+#recursos h2 {
+    color: #fff;
+}
+
+#recursos p {
+    color: #fff;
+}
+
+.rotacionar {
+    transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+    padding-top: 95px;
+    padding-left: 85px;
+}
+
+
+/* ---------------------------------------- Fim Recursos ---------------------------------------- */
+
+
+/* ---------------------------------------- Rodape ---------------------------------------- */
+
+footer {
+    background-color: #000;
+    padding: 50px 0px 20px 0px;
+    /* faz com que um elemento fique acima do outro */
+    position: relative;
+}
+
+footer h4 {
+    color: #919496;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+footer .navbar-nav a {
+    color: #fff;
+    font-size: 0.8em;
+}
+
+footer .navbar-nav a:hover {
+    color: #9bf0e1;
+    font-size: 0.8em;
+    text-decoration: none
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+}
+
+footer ul li {
+    margin: 0 12px;
+}
+
+
+/* ---------------------------------------- Fim Rodape ---------------------------------------- */
+
+
+/* Media Queries */
+
+@media (max-width: 575.98px) {
+    /* ajuste da tipografia */
+    h1 {
+        font-size: 2em;
+    }
+    /* ajuste dos botões */
+    .btn-custom {
+        margin: 10px 15px;
+    }
+    #logo_footer {
+        margin-left: 8em;
+    }
+    footer h4 {
+        text-align: center;
+        margin-right: 14px;
+        margin-top: 8px;
+    }
+    footer .navbar-nav a {
+        margin-left: 12em;
+        margin-bottom: 5px;
+    }
+    .redes-ul {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+    /* imagens redes sociais */
+    .social-media {
+        width: 2.5em;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* ajuste da tipografia */
+    h1 {
+        font-size: 3em;
+    }
+    .btn-custom {
+        margin: 10px 15px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* ajuste da tipografia */
+    h1 {
+        font-size: 4em;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* ajuste da tipografia */
+    h1 {
+        font-size: 5em;
+    }
+}
+
+@media (min-width: 1200px) {
+    /* ajuste da tipografia */
+    h1 {
+        font-size: 6em;
+    }
+}
